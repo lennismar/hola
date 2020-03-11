@@ -1,0 +1,46 @@
+/*------------------------------------*\
+    $MAIN
+\*------------------------------------*/
+html{
+    font-family:  $base-font-family;
+    font-size: $base-font-size ;
+    line-height: $line-height-ratio;
+    //overflow-y:scroll;
+    //min-height:100%;
+    background: $color-7;
+    color:$color-1;
+}
+
+html, 
+body{
+	//overflow-x: hidden; /* prevents horizontal scroll bars */
+	-webkit-tap-highlight-color: rgba(0,0,0,0); /* disable webkit tap highlight */
+	height: 100%; /* fixes focus scrolling in Safari (OS X) */
+	line-height: inherit;
+	
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing:antialiased;
+	-o-font-smoothing:antialiased;
+	-ms-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+a {
+	text-decoration: none;
+	color: $color-6;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.clearfix {@include clearfix();}
+
+b, strong {font-weight: 700}
+
+@media all and (min-width:$break-desktop) {
+	
+    a {@include transition (all 0.3s ease-in-out);}
+}
+	

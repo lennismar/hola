@@ -1,0 +1,126 @@
+/*------------------------------------*\
+    $Type
+\*------------------------------------*/
+
+h1,h2, h3, h4, h5, h6 {
+	
+	font-weight: bold;
+}
+
+
+.text-sm {
+	font-size: $milli-size;
+}
+// HEADERS
+
+.h1-header {
+		
+	font-size: $h1-size;
+	//color: $color-6;
+	text-align: center;
+	//padding-bottom:$half-spacing-unit;
+	
+	@media (max-width:$break-movil) {
+	
+        font-size: $h3-size;
+    }
+}
+
+.h2-header {
+		
+	font-size: $h1-size;
+	color: $color-6;
+	text-align: center;
+	padding-bottom:$half-spacing-unit;
+	
+	@media (max-width:$break-movil) {
+	
+        font-size: $h3-size;
+    }
+}
+
+.h3-header {
+	
+	font-size: $h3-size;
+	color: $color-1;
+	text-align: center;
+	font-weight: bold;
+	padding-top:$spacing-unit-medium;
+	padding-bottom:$spacing-unit-medium;
+	
+	@media (max-width:$break-movil) {
+	
+        font-size: $h5-size;
+    }
+
+}
+
+.h4-header {
+	
+	font-size: $h4-size;
+	color: $color-1;
+	text-align: center;
+	font-weight: bold;
+	padding-top:$spacing-unit-medium;
+	padding-bottom:$spacing-unit-medium;
+	
+	@media (max-width:$break-movil) {
+	
+        font-size: $h5-size;
+    }
+
+}
+
+.h6-header {
+	
+	font-size: $h6-size;
+	color: $color-1;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.text-sub-header {
+	display: block;
+	text-align: center;
+	font-size:$h6-size;
+	color:$color-1;
+	margin-bottom: $spacing-unit-medium;
+}
+
+.explanatory-text {
+	font-size: $micro-size;
+	color: $color-3;
+	display: block;
+}
+
+.text-orange {
+	color: $color-6;
+}
+
+/*------------------------------------*\
+    PARAGRAPHS
+\*------------------------------------*/
+
+p {margin-bottom: $spacing-unit-small;
+	
+	&:last-child {margin-bottom: 0px;}
+}
+
+/*------------------------------------*\
+    Lead - Texto destacado
+\*------------------------------------*/
+
+
+.lead{
+	
+	border-left: 5px $color-6 solid;
+	padding:$spacing-unit-small;
+	font-size: $h5-size;
+	background: $color-8;
+	@include border-radius ($brand-round);
+	
+	@media (max-width:$break-movil) {
+	
+        font-size: $h6-size;
+    }
+}

@@ -1,0 +1,61 @@
+///////////////////////////////////////////////
+////////
+///////    FOOTER
+//////
+///////////////////////////////////////////////
+
+footer {
+	
+	background: $color-1 url(../img/bg-footer.png);
+	color:$color-3;
+	font-size: $milli-size;
+}
+
+footer a {color:$color-3;}
+
+footer a:hover {color:$color-2;}
+
+footer ul {margin: 0px; padding: 0; list-style: none;
+	
+	li {margin: 8px 0px;}
+}
+
+.footer-title {text-transform: uppercase; font-weight: bold;color:$color-2; margin-bottom: 5px;}
+
+.copyright {margin-top: 15px;}
+
+// COLORES SVG
+
+.footer-btn-ico {
+	
+	margin-right: 10px;
+	
+	.footer-ico-stroke {stroke:$color-3;@include transition (all 0.3s ease-in-out);}
+	
+	.footer-ico-fill {fill:$color-3;@include transition (all 0.3s ease-in-out);}
+}
+
+.footer-btn-ico:hover {
+	
+	#footer-ico-twitter {
+	
+		.footer-ico-stroke {stroke:$color-twitter;}
+		
+		.footer-ico-fill {fill:$color-twitter;}
+	}
+
+	
+	#footer-ico-facebook {
+	
+		.footer-ico-stroke {stroke:$color-facebook;}
+		
+		.footer-ico-fill {fill:$color-facebook;}
+	}
+	#footer-ico-gplus {
+	
+		.footer-ico-stroke {stroke:$color-googleplus;}
+		
+		.footer-ico-fill {fill:$color-googleplus;}
+	}
+
+}

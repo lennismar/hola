@@ -1,0 +1,26 @@
+/*------------------------------------*\
+   CUSTOM TEMPLATE
+\*------------------------------------*/
+
+.hero-custom-template {
+	background-color: $color-6;
+}
+
+.content-custom-template {
+	
+	h2 {
+		color: $color-6;
+		font-size:$h3-size;
+		margin-bottom: $spacing-unit-small;
+		margin-top:  $spacing-unit-medium;
+		&:first-child {margin-top: 0px;}
+	}
+	
+	h3 {
+		margin: $spacing-unit-medium 0px $spacing-unit-small 0px; }
+	
+}
+
+.aside-custom-template {
+	
+}

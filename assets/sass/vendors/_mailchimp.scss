@@ -1,0 +1,32 @@
+
+.newsletter {
+	
+	display: table !important; 
+	margin: 0 auto; 
+	padding-bottom: 50px;
+	width: 80% !important;
+	//max-width: 800px;
+	
+	input {width: 100% !important;}
+	.mc_embed_signup {width: 80% !important}
+}
+
+.newsletter-input {
+	
+	display: inline-block;
+	
+	width: 32%;
+	
+	@media (max-width:$break-movil) {
+		
+		width: 100%;
+		display:block;
+		
+	    input {display: block; margin-bottom: 10px; width: 100% !important;}
+	}
+	
+}
+
+//BTN SUSCRIBIRSE
+
+#mc-embedded-subscribe {max-width: 200px;margin: 0 auto;}

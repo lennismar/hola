@@ -1,0 +1,30 @@
+/*------------------------------------*\
+    CHECK-OUT FORM
+\*------------------------------------*/
+
+.checkout-form-resume {
+	
+	display: block;
+	background: $color-2 !important;
+	@include clearfix ();
+	@include border-top-right-radius (25px);
+	max-width: 550px;
+	margin: 0 auto;
+	
+}
+
+.precio-anticipado {
+	font-size: $h4-size;
+	color: $color-6;
+}
+
+.checkout-advice {
+	
+	border: 1px $color-2 solid;
+	padding: $spacing-unit-small;
+	font-size: $milli-size;
+	text-align: center;
+	max-width: 550px;
+	margin: $spacing-unit-small auto;
+	@include border-radius ($brand-round);
+}

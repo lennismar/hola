@@ -1,0 +1,64 @@
+
+/*------------------------------------*\
+    PAGINATION
+\*------------------------------------*/
+
+
+.pagination-wrapper {
+	
+	border-top:1px $color-8 solid;
+	padding-top: $spacing-unit-medium;
+	position: relative;
+}
+
+.pagination {
+	
+	display: table; 
+	margin: 0 auto;
+    text-align:center;
+    padding: 10px;
+    
+    .current a {
+		background: $color-6 !important;
+		color: $color-2;}
+    
+}
+
+
+.pagination li{
+	float:left;
+	margin-left:5px;
+	margin-top: 5px;
+}
+
+.pagination > li > a{
+	padding:10px 16px;;
+	background: $color-2;
+	color: $color-1;
+	
+	@include border-radius ($brand-round);
+	border: 1px $color-7 solid;
+	
+	&:hover {
+		background: $color-6;
+		color: $color-2;
+	}
+}
+
+.pagination-see-all{
+	color:$color-6;
+	text-decoration: underline;
+	display: table;
+	position:absolute;
+	top:$spacing-unit-medium +7px;
+	right:0px;
+	
+	@media (max-width:$break-movil) {
+		 
+		position: relative;
+		margin: 0 auto;
+		margin-bottom: $spacing-unit-small;
+		//margin-top: $spacing-unit-small;
+		 
+	}
+}

@@ -1,0 +1,17 @@
+///////////////////////////////////////////////
+////////
+///////    CARDS - Others: related, por perfil...
+//////
+///////////////////////////////////////////////
+
+.card-others {
+	background: $color-2;
+	@include clearfix ();
+	@include border-top-right-radius (25px);
+}
+
+.card-others-img img {width: 100%; height: auto;@include border-top-right-radius (25px);}
+
+.card-others-title {font-size:$h4-size; line-height: 130%; font-weight: bold;padding:7px 12px; }
+
+.card-others-link {color: $color-6; text-decoration: underline;padding:0px 12px 7px 12px; }

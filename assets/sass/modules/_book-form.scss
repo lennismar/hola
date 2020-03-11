@@ -1,0 +1,68 @@
+/*------------------------------------*\
+    Book-form
+\*------------------------------------*/
+
+.book-form {
+	
+	background: $color-8 !important;
+	@include border-top-right-radius (25px);
+	padding: $spacing-unit-sm;
+	display: block;
+	max-width: 550px;
+	margin: 0 auto;
+	
+	input, select {
+		width: 100%;
+		font-size: 15px;
+	}
+	
+	.label-group {
+		margin-bottom: 10px;
+		vertical-align: top;
+	}
+	
+	.main-search-date {
+	
+		input {width:48.55% !important;}
+		input:first-child {margin-right: 1%;}
+	}
+	
+	.main-price {
+		color: $color-6;
+		font-size: $h3-size;
+		font-weight: bold;
+		float: left;
+	}
+	
+	.text-price {
+		float: left;
+		margin-left: 10px;
+		margin-top: 5px;
+	}	
+	
+	.total-price {
+		font-size: $h5-size;
+	}
+	
+	.how-to-book {
+		color: $color-1; 
+		text-align: center; 
+		margin: 0 auto; 
+		display: table; 
+		text-decoration: underline;
+	}
+}
+
+
+.advice {
+	
+	border: 1px $color-2 solid;
+	padding: $spacing-unit-small;
+	color: $color-3;
+	margin-top:  $spacing-unit-small;
+	font-size: $milli-size;
+	@include border-radius ($brand-round);
+	
+	p {line-height: 130% !important;}
+
+}

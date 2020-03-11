@@ -1,0 +1,62 @@
+/*------------------------------------*\
+    ALERTS
+\*------------------------------------*/
+
+
+// ALERTS GENERALES
+
+.alert {
+	display: block;
+	padding: $spacing-unit-small;
+	//font-size:$h6-size;
+	@include border-radius ($brand-round);
+	
+	margin-bottom: $spacing-unit-small;
+}
+
+.alert--info {
+	
+	border: 1px #4ba6db solid;
+	background:#e4f2fb;
+}
+
+.alert--warning {
+	
+	border: 1px #F9B636 solid;
+	background:#FFECC6;
+}
+
+.alert--succes {
+	border: 1px #81c824 solid;
+	background:#eaf4de;
+}
+
+.alert--danger {
+	
+	border: 1px #f94b36 solid;
+	background:#FFD3CE;
+	
+}
+
+
+//ALERTS SMALL EN TEXTO
+
+.alert-small-pill {
+	
+	display: inline-block;
+	padding: 2px 5px;
+	font-size:$milli-size;
+	@include border-radius ($brand-round);
+}
+
+.alert-small-pill--warning {
+	
+	border: 1px #F9B636 solid;
+	background:#FFECC6;
+}
+
+.alert-small-pill--succes {
+	
+	color: #81c824;
+	background:#eaf4de;
+}

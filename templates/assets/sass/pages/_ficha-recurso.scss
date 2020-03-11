@@ -1,0 +1,152 @@
+/*------------------------------------*\
+    FICHA RECURSO TURISTICO
+\*------------------------------------*/
+
+.sidebar-related {
+	
+	.sidebar-header {
+		font-weight: bold;
+		font-size: $h5-size;
+		border-bottom: 2px $color-1 solid;
+		display: block;
+		padding-bottom: 5px;
+	}
+	
+	.card-places {
+		margin-top: $spacing-unit-medium;
+		
+		.card-places-title {font-size:$h6-size;}
+			
+		.card-places-content,
+		.card-places-link {display: none}
+		
+	}
+	
+}
+
+#menu-fixed-top { // barra superior del submenú que se queda fija
+	
+	@include box-shadow (0px 2px 2px 0px rgba(0, 0, 0, 0.2));
+	
+	@media (max-width:$break-tablet) {
+		
+		background: $color-1;
+		
+	}
+}
+
+.second-level--menu {
+	
+	//height: 50px;
+	margin-top: 10px;
+	line-height: 100%;
+	padding:10px 0px;
+	display: inline-block;
+	font-size: $milli-size;
+	
+	a {
+		float:left;
+		color:$color-1;
+		font-weight: bold;
+		text-transform: uppercase;
+		padding: 0px 20px;
+		border-right:1px $color-2 solid;
+		
+		&:hover  {
+			color:$color-6;
+		}
+		
+		&:last-child {border-right: 0px;}
+	}
+	
+	@media (max-width:$break-tablet) {
+		
+		display:none;
+		
+	}
+	
+}
+
+.big-button-related {
+	
+	height: 50px;
+	padding: 0px 10px;
+	line-height: 50px;
+	vertical-align: center;
+	background: $color-1;
+	color:$color-2;
+	display: inline-block;
+	float:right;
+	
+	@media (max-width:$break-tablet) {
+		
+		float:none;
+		display: table;
+		margin: 0 auto;
+		//width: 100%;
+		
+	}
+	
+	@media (min-width:$break-desktop) {
+		
+		&:hover {background:#333;}
+		
+	}
+	
+	.big-button-related--ico {
+		
+		display: inline-block;
+		float:left;
+		margin-top: 4px;
+		margin-right: 5px;
+	}
+	
+	.big-button-related--number {
+		font-size: $h2-size;
+		color:$color-6;
+		font-weight: bold;
+		display: inline-block;
+		float:left
+	}
+	
+	.big-button-related--text {
+		font-weight: bold;
+		display: inline-block;
+		padding: 0px $spacing-unit-small;
+		//line-height: 50px;
+		//margin-top: -15px !important;
+		float:left;
+
+	}
+	.big-button-related--go {
+		
+		font-weight: bold;
+		display: inline-block;
+		color:$color-6;
+		border-left: 1px #333 solid;
+		padding: 0px $spacing-unit-small;
+		float:left;
+	}
+}
+
+.icon--date-green {
+	margin-left:45px;
+	display: inline-block;
+}
+
+.ficha-share {
+	display: block;
+	float:none;
+	display: table;
+	margin-top:10px;
+	
+	@media (min-width:$break-movil) {
+		margin-top: -10px;
+		float:right;
+	}
+}
+
+
+
+
+

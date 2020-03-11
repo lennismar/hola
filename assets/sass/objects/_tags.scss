@@ -1,0 +1,19 @@
+/*------------------------------------*\
+   TAGS
+\*------------------------------------*/
+
+.tag {
+	//display: inline-block;
+	padding:1px 5px;
+	border:1px #ccc solid;
+	color:$color-gray-light;
+	font-size: $h8-size;
+	border-radius: 2px;
+	//@include border-radius (4px);
+	//margin-right: 10px;
+	//margin-top: 5px;
+}
+
+.tag:last:child {margin-right:0px;}
+
+//a.tag:hover {border:1px $color-6 solid;}

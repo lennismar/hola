@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+
+		<!-- iPhone, iPad and Android specific settings -->	
+		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1;">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		
+		<title>Adminica | The Professional Admin Theme</title>
+		
+		<!-- Create an icon and splash screen for iPhone and iPad -->
+		<link rel="apple-touch-icon" href="images/iOS_icon.png">
+		<link rel="apple-touch-startup-image" href="images/iOS_startup.png"> 
+
+		<link rel="stylesheet" type="text/css" href="css/all.css" media="screen">
+		
+		<!-- These following stylesheets will set the light theme, fixed width, top bar, red colour -->
+		<link rel="stylesheet" type="text/css" href="css/theme/theme_light.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="css/layout_fixed.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="css/header_top.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="css/theme/theme_red.css" media="screen">
+
+		<!--[if IE 6]><link rel="stylesheet" type="text/css" href="css/ie6.css" media="screen" /><![endif]-->
+		<!--[if IE 7]><link rel="stylesheet" type="text/css" href="css/ie.css" media="screen" /><![endif]-->
+			
+		<!-- Load JQuery -->		
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+
+		<!-- Load JQuery UI -->
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+		
+		<!-- Load Interface Plugins -->
+		<script type="text/javascript" src="js/uniform/jquery.uniform.js"></script>
+
+		<script type="text/javascript" src="js/iPhone/jquery.iphoneui.js"></script>
+		<script type="text/javascript" src="js/uitotop/js/jquery.ui.totop.js"></script>
+
+		<!-- This file configures the various jQuery plugins for Adminica. Contains links to help pages for each plugin. -->
+		<script type="text/javascript" src="js/adminica/adminica_ui.js"></script>
+
+		
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="topbar" class="clearfix">
+				<a href="index.html" class="logo"><span>Adminica Pro II</span></a>
+				<div class="user_box round_all">
+					<img src="images/profile.jpg" width="55" alt="Profile Pic" />
+					<h2>Administrator</h2>
+					<h3><a class="text_shadow" href="#">John Smith</a></h3>
+					<ul>
+						<li><a href="#">profile</a><span class="divider">|</span></li>
+						<li><a href="#">settings</a><span class="divider">|</span></li>
+						<li><a href="login.html">logout</a></li>
+					</ul>
+				</div><!-- #user_box -->	
+			</div><!-- #topbar -->		
+				
+			<div id="sidebar">
+				<div class="cog">+</div>
+				
+				<a href="index.php" class="logo"><span>Adminica Pro II</span></a>
+			
+				<div class="user_box round_all clearfix">
+					<img src="images/profile.jpg" width="55" alt="Profile Pic" />
+					<h2>Administrator</h2>
+					<h3><a class="text_shadow" href="#">John Smith</a></h3>
+					<ul>
+						<li><a href="#">settings</a><span class="divider">|</span></li>
+						<li><a href="login.php">logout</a></li>
+					</ul>
+				</div><!-- #user_box -->
+			
+				<ul id="accordion" class="round_all">
+					<li><a href="index.php" class="top_level"><img src="images/icons/small/grey/home.png"/>Home</a>
+						<ul class="drawer">
+							<li><a href="#">Activity</a></li>
+							<li><a href="#">Events</a></li>
+							<li><a href="#">Tasks</a></li>
+						</ul>
+					</li>
+					<li><a href="#" class="top_level"><img src="images/icons/small/grey/mail.png"/>Mailbox</a>
+						<ul class="drawer">
+							<li><a href="#">Inbox</a></li>
+							<li><a href="#">Sent Items</a></li>
+							<li><a href="#">Drafts</a></li>
+							<li><a href="#">Trash</a></li>
+						</ul>
+					</li>
+					<li><a href="#" class="top_level"><img src="images/icons/small/grey/documents.png"/>Documents</a>
+						<ul class="drawer">
+							<li><a href="#">Create New</a></li>
+							<li><a href="#">View All</a></li>
+							<li><a href="#">Upload/Download</a></li>
+						</ul>
+					</li>
+					<li><a href="#" class="top_level"><img src="images/icons/small/grey/users.png"/>Members</a>
+						<ul class="drawer">
+							<li><a href="#">Add New</a></li>
+							<li><a href="#">Edit/Delete</a></li>
+							<li><a href="#">Search Profiles</a></li>
+						</ul>
+					</li>
+					<li><a href="#" onClick="parent.location='http://www.tricycle.ie'" class="top_level"><img src="images/icons/small/grey/graph.png"/>Statistics</a></li>
+					<li><a href="#" class="top_level"><img src="images/icons/small/grey/cog_2.png"/>Settings</a>
+						<ul class="drawer">
+							<li><a href="#">Account</a></li>
+							<li><a href="#">System</a></li>
+						</ul>
+					</li>
+				</ul>
+				<form id="search_side"><input class="round_all" type="text" value="Search Adminica..." onclick="value=''"></form>
+				<ul id="side_links" class="text_shadow round_all" >
+					<li><a href="http://www.tricycle.ie/adminica/index.php/docs/">Online Documentation</a>
+					<li><a href="#">Expert Forum</a></li>
+					<li><a href="#">Product Wiki</a></li>
+					<li><a href="#">Latest Company News</a></li>
+				</ul>
+			</div><!-- #sidebar -->
+
+		<div id="main_container" class="main_container container_16 clearfix">
+			
+						<div id="nav_top" class="clearfix round_top">
+				<ul class="clearfix round_all">
+					<li class="current"><a href="dashboard_sorter.html"><img src="images/icons/small/white/laptop.png"/>Dashboard</a></li>
+				
+					<li><a href="#"><img src="images/icons/small/grey/frames.png"/>Layout</a>
+						<ul class="dropdown">
+							<li><a href="layout.html">16 Grid - 960.gs</a></li>
+							<li><a href="text.html">Text & Typography</a></li>
+							<li><a class="has_slide" href="#">Layout Width</a>
+								<ul class="slideout">						
+									<li><a href="css/theme/switcher1.php?style=../layout_fixed.css">Fixed</a></li>
+									<li><a href="css/theme/switcher1.php?style=switcher.css">Fluid</a></li>
+								</ul>
+							</li>
+							<li><a class="has_slide" href="#">Layout Position</a>
+								<ul class="slideout">
+									<li><a href="css/theme/switcher2.php?style=switcher.css">Side</a></li>
+									<li><a href="css/theme/switcher2.php?style=../layout_top.css">Top</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a href="#"><img src="images/icons/small/grey/coverflow.png"/>Boxes</a>
+						<ul class="dropdown">
+							<li><a class="has_slide" href="#">Tab Boxes</a>
+								<ul class="slideout">
+									<li><a href="tabs.html">Horizontal Tabs</a></li>
+									<li><a href="tabs.html">Vertical Tabs</a></li>
+								</ul>
+							</li>
+								<li><a href="accordions.html">Accordions Boxes</a></li>
+								<li><a href="wizard.html">Step by Step Wizard</a></li>
+							<li><a href="code.html">Code View</a></li>
+						</ul>
+					</li>	
+					<li><a href="#"><img src="images/icons/small/grey/create_write.png"/>Forms</a>
+						<ul class="dropdown">
+							<li><a href="forms.html">Input & Validation</a></li>
+							<li><a class="has_slide" href="#">Date</a>
+								<ul class="slideout">
+									<li><a href="forms.html">Date Field</a></li>
+									<li><a href="forms.html">Inline Picker</a></li>
+								</ul>
+							</li>
+							<li><a class="has_slide" href="#">Sliders</a>
+								<ul class="slideout">
+									<li><a href="forms.html">Horizontal Slider</a></li>
+									<li><a href="forms.html">Vertical Slider</a></li>
+									<li><a href="forms.html">Range Slider</a></li>
+									<li><a href="forms.html">Progress Bar</a></li>
+								</ul>
+							</li>
+							<li><a href="buttons.html">Buttons</a></li>
+							<li><a href="editor.html">WYSIWYG Editor</a></li>
+						</ul>
+					</li>		
+					<li><a href="#"><img src="images/icons/small/grey/images.png"/>Gallery</a>
+						<ul class="dropdown">
+							<li><a href="gallery.html">Fancybox Gallery</a></li>
+							<li><a href="gallery_sortable.html">Sortable Gallery</a></li>
+						</ul>
+					</li>			
+					<li><a href="#"><img src="images/icons/small/grey/blocks_images.png"/>Tables</a>
+						<ul class="dropdown dropdown_left">
+							<li><a href="tables.html">DataTables</a></li>
+							<li><a href="tables_static.html">Regular Tables</a></li>
+						</ul>			
+					</li>
+					<li><a href="#"><img src="images/icons/small/grey/plane_suitcase.png"/>Organize</a>
+						<ul class="dropdown dropdown_left">
+							<li><a href="files.html"><img src="images/icons/small/grey/Folder.png"/>Files</a></li>
+							<li><a href="contacts.html"><img src="images/icons/small/grey/Users.png"/>Contacts</a></li>
+						</ul>
+					</li>
+					<li><a href="calendar.html"><img src="images/icons/small/grey/month_calendar.png"/>Calendar</a></li>
+					<li><a href="charts.html"><img src="images/icons/small/grey/graph.png"/>Charts</a></li>
+					<li><a href="login.html"><img src="images/icons/small/grey/locked_2.png"/>Login</a></li>
+				</ul>	
+			</div><!-- #nav_top -->
+
+
+				<?php include 'includes/searchbox.html'?>
+				<div class="flat_area grid_16">
+					<h2>Step by Step Wizard</h2>
+					<p>Here we have the two most popular and powerful WYSIWYG text/HTML editors - CKeditor and Tiny Editor.</p>
+				</div>
+				<div class="box grid_16">
+					<h2 class="box_head grad_colour round_top">Wizard</h2>
+					<div class="toggle_container wizard">		
+						<div id="progressbar" class="progress_in_header"><span>Progress</span></div>
+						<div class="wizard_steps">
+							<ul class="clearfix">
+								<li class="current">
+									<a href="#step_1" class="clearfix">
+										<span>1. <strong>Register</strong></span>
+										<small>It only takes a minute</small>
+									</a>
+								</li>
+								<li>
+									<a href="#step_2" class="clearfix">
+										<span>2. <strong>Information</strong></span>
+										<small>Fill out our form</small>
+									</a>
+								</li>
+								<li>
+									<a href="#step_3" class="clearfix">
+										<span>3. <strong>Another Step</strong></span>
+										<small>Were nearly there</small>
+									</a>
+								</li>
+								<li>
+									<a href="#step_4" class="clearfix">
+										<span>4. <strong>Finish</strong></span>
+										<small>Confirm and complete</small>
+									</a>
+								</li>
+							</ul>		
+						</div>
+					</div>
+						<div class="block grid_16 alpha omega wizard_content">
+							<div id="step_1" class="step" style="display:block;">
+								<h1>1. Register</h1>
+								<hr class="grid_16 alpha omega">
+								<form>
+									<fieldset class="grid_8 alpha">
+										<label>Small input form</label> 
+										<input title="This field has an HTML5 autofocus property" type="text" class="small required" autofocus> 
+						
+										<label>Medium input form</label> 
+										<input title="This is a tool tip" type="text" class="medium">
+															
+										<label>Long input form</label> 
+										<input title="A tooltip can be set on any object by giving it a title property" type="text" class="large"> 
+									</fieldset>
+								
+									<fieldset class="grid_8 omega">		
+										<label>Regular Text Area</label> 
+										<textarea class="grid_16"></textarea> 
+									</fieldset>
+									
+									<hr class="grid_16 alpha omega">
+								
+									<button class="next_step button_colour round_all" id="step_2"><img height="24" width="24" alt="Bended Arrow Right" src="images/icons/small/white/bended_arrow_right.png"><span>Next Step</span></button>
+								</form>
+							</div>
+
+							<div id="step_2" class="step">
+								<h1>2. Information</h1>
+								<hr class="grid_16 alpha omega">
+								<form>
+									<fieldset class="grid_8 alpha">
+										<label>Small input form</label> 
+										<input title="This field has an HTML5 autofocus property" type="text" class="small required" autofocus> 
+
+										<label>Medium input form</label> 
+										<input title="This is a tool tip" type="text" class="medium">
+
+										<label>Long input form</label> 
+										<input title="A tooltip can be set on any object by giving it a title property" type="text" class="large"> 
+									</fieldset>
+
+									<fieldset class="grid_8 omega">		
+										<label>Regular Text Area</label> 
+										<textarea class="grid_16"></textarea> 
+									</fieldset>
+
+									<hr class="grid_16 alpha omega">
+
+									<button class="next_step button_colour round_all" id="step_3"><img height="24" width="24" alt="Bended Arrow Right" src="images/icons/small/white/bended_arrow_right.png"><span>Next Step</span></button>
+								</form>
+							</div>		
+						
+							<div id="step_3" class="step">
+								<h1>3. Another Step</h1>
+								<hr class="grid_16 alpha omega">
+								<form>
+									<fieldset class="grid_8 alpha">
+										<label>Small input form</label> 
+										<textarea class="grid_16"></textarea>
+									</fieldset>
+
+									<hr class="grid_16 alpha omega">
+
+									<button class="next_step button_colour round_all" id="step_4"><img height="24" width="24" alt="Bended Arrow Right" src="images/icons/small/white/bended_arrow_right.png"><span>Next Step</span></button>
+								</form>								
+							</div>	
+							
+							<div id="step_4" class="step">
+								<h1>4. Finish</h1>
+								<hr class="grid_16 alpha omega">
+								<form>
+									<fieldset class="grid_8 alpha">
+										<label>Small input form</label> 
+										<textarea class="grid_16"></textarea>
+									</fieldset>
+
+									<hr class="grid_16 alpha omega">
+
+									<button class="button_colour round_all"><img height="24" width="24" alt="Bended Arrow Right" src="images/icons/small/white/bended_arrow_right.png"><span>Finish</span></button>
+								</form>								
+							</div>											
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="loading_overlay">
+			<div class="loading_message round_bottom">Loading...</div>
+		</div>
+		
+<script type="text/javascript">
+
+// wizard
+
+	$('.wizard_steps ul li a').click(function(){
+	
+		$('.wizard_steps ul li').removeClass('current');
+		$(this).parent('li').addClass('current');
+		
+		var step = $(this).attr('href');
+		var step_num = $(this).attr('href').replace('#step_','');
+		var step_multiplyby = (100 / $(".wizard_steps > ul > li").size());
+		var prog_val = (step_num*step_multiplyby);
+		
+		$( "#progressbar").progressbar({ value: prog_val });
+		
+		$('.wizard_content').children().hide();
+		$('.wizard_content').children(step).fadeIn();
+		
+		return false;
+	});
+	
+	$('button.next_step').click(function(){
+		
+		var step = $(this).attr('id');
+		var hash_step = ('#'+step);
+				
+		var step_num = $(this).attr('id').replace('step_','');
+		var step_multiplyby = (100 / $(".wizard_steps > ul > li").size());
+		var prog_val = (step_num*step_multiplyby);
+		
+		$( "#progressbar").progressbar({ value: prog_val });
+		
+		$('.wizard_steps ul li').removeClass('current');
+		$('a[href='+ hash_step +']').parent().addClass('current');
+		
+		$('.wizard_content').children().hide();
+		$('.wizard_content').children(hash_step).fadeIn();
+		
+		return false;		
+	});
+	
+</script>
+
+		</body>
+	</html>

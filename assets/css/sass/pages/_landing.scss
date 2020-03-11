@@ -1,0 +1,22 @@
+/**************************************
+*
+*  LANDING PAGE
+*
+***************************************/
+
+.hero-inner-buttons {
+	
+	a {
+		span:before {margin-top: -3px;}
+	}
+}
+
+.menu-fixed-top {
+	
+}
+
+.is_stuck {
+	position:fixed;
+	top:0;
+	z-index: 99999 !important;
+}

@@ -1,0 +1,55 @@
+/*------------------------------------*\
+    STEP NAV
+\*------------------------------------*/
+
+
+.step-nav {
+	
+	text-align: center;
+	
+	.step-nav-three {
+		
+		//padding: 10px 0px;
+		height: 50px;
+		vertical-align: middle;
+		background: $color-2;
+		display: inline-block;
+		width: 33.33%;
+		float:left;
+		display: table;
+		
+		span {
+			
+			display: table-cell;
+			vertical-align: middle;
+		}
+		@media (max-width:$break-movil) {
+	
+        	font-size: $milli-size;
+    	}
+		
+	}
+	
+	.current {
+		
+		border-bottom: 5px #81C824 solid;
+		color:$color-1;
+	}
+	
+	.disable {
+		
+		border-bottom: 5px #E7E7E5 solid;
+		color:$color-4;
+	}
+	
+	.complete {
+		
+		border-bottom: 5px #ADDB70 solid;
+		color:$color-4;
+		
+		&:hover {
+			color: $color-1;
+			border-bottom: 5px #81C824 solid;
+		}
+	}
+}

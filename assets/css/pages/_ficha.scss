@@ -1,0 +1,97 @@
+/*------------------------------------*\
+    FICHA DE CASA
+\*------------------------------------*/
+
+.house-section{
+	
+	background: $color-2;
+	@include border-top-right-radius (25px);
+}
+
+.house-section-header {
+	padding:15px;
+	}
+
+.house-title {
+	font-size: $h3-size;
+}
+
+.content-block,
+.content-block--small-pad {
+	
+	border-bottom: 1px $color-5 solid;
+	@include clearfix();
+	
+	h2 {
+		text-transform: uppercase;
+		margin-bottom: $spacing-unit-small;
+	}
+	
+	p {
+		margin-bottom:$spacing-unit-small;
+		&:last-child {margin-bottom: 0;}
+	}
+	
+	@media (max-width:$break-movil) {
+	
+        padding: $spacing-unit-small !important;
+    }
+}
+.content-block {
+	
+	padding:$spacing-unit-medium $spacing-unit-medium;
+}
+.content-block--small-pad {
+	padding:$spacing-unit-small $spacing-unit-medium;
+}
+
+// BLOQUE STATS
+
+.house-reviews {
+	float:right;
+	
+	line-height: 100%;
+	vertical-align: middle;
+	
+	@media (max-width:$break-movil) {
+		
+		float:none; 
+	}	
+}
+
+
+.stat {
+	border-right: 1px $color-5 solid;
+	&:last-child {border-right: 0px;
+		
+	}
+}
+
+.stat--title {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: $milli-size;
+	
+}
+
+.stat--value {
+	text-align: center;
+	font-weight: bold;
+	font-size: $h5-size;
+}
+
+ul.service-list {
+	
+	display:block;
+	li {
+		float:none !important;
+		margin: 0px 0px 15px 0px;
+	}
+}
+
+.house-conditions {
+	text-align: center;
+	@include clearfix();
+	
+	
+}

@@ -1,0 +1,302 @@
+///////////////////////////////////////////////
+////////
+///////    MAIN SEARCH
+//////
+///////////////////////////////////////////////
+
+//////////// FORM Busqueda
+
+
+/** Estilos generales del buscador */
+
+.main-search-form {
+	max-width:960px;
+	margin: 0 auto;
+	font-size: 16px;
+	font-weight: normal !important;
+	display: block;
+	position: relative;
+	
+	@media (max-width:$break-tablet) {
+		max-width:600px;
+		
+	}	
+	.form-search-fields {
+		display: flex;
+		display: -webkit-flex; /* Safari */
+		display: -ms-flexbox;
+		-webkit-flex-direction: row; /* Safari */
+		flex-direction: row;
+		-webkit-flex-wrap: nowrap; /* Safari */
+		flex-wrap: nowrap;
+		
+		.label-group {
+			display: inline-block;
+			margin-left: 0.5%;
+			
+			&:first-child {
+				margin-left: 0;
+			}
+		}
+		
+		/** Campo lugar */
+		.main-search-place {
+			
+			width: 36%;
+		}
+		
+		/** bloques de fechas */
+		
+		.main-search-date {
+			width: 32%;
+			
+			input {
+				width: 49%;
+				display: inline-block;
+				//margin-right: 2%;
+				
+				&:first-child {
+					margin-left: 0;
+				}
+			}
+		}
+		/** bloques de n0 personas */
+		.main-search-people {
+			width: 17%;
+		}
+		
+		/* Boton de buscar */
+		
+		.form-search-button{
+			width: 14%;
+		}
+		
+		/** Responsive */
+		
+		
+		@media (max-width:$break-tablet) { 
+			flex-direction: column;
+			-webkit-flex-direction:column;
+			.label-group {
+				width: 100%;
+				margin-bottom: 10px;
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+
+	}
+}
+
+
+/** Borde y estilo para el buscador en la home */
+.main-search-form--home {
+	background-color: rgba(0, 0, 0, 0.7);
+	@include border-radius (4px);
+	padding: 20px;
+
+}
+
+/** Borde y estilo para el buscador en los interiores */
+
+.main-search-form--inside {
+	
+	padding: $spacing-unit-small 10px;
+	display: table;
+	
+	@media (max-width: $break-desktop) {
+        display:none;
+    }
+}
+
+/** Botón que despliega la búsqued aen la página de resultados mobile */
+.btn-show-search {
+	
+	display:none;
+	
+	@media (max-width: $break-desktop) {
+	
+        display:block;
+        padding: 10px $spacing-unit-small;
+        text-transform: uppercase;
+		font-weight: bold;
+		background: url(../img/icon-arrow-down.svg) no-repeat right center;
+    }
+}
+
+
+/*  DESCARTADO
+
+.main-search-form { // ESTILOS GENERALES
+	
+	display: table;
+	margin: 0 auto;
+	font-size: 16px;
+	font-weight: normal !important;
+	//@include clearfix();
+}
+
+
+
+
+
+.btn-show-search {
+	
+	display:none;
+	
+	@media (max-width:750px) {
+	
+        display:block;
+        padding: 10px $spacing-unit-small;
+        text-transform: uppercase;
+		font-weight: bold;
+		background: url(../img/icon-arrow-down.svg) no-repeat right center;
+    }
+}
+
+
+
+// Separado los campos del boton para responsive
+
+.form-search-fields{ 
+	
+	max-width: 770px;
+	//overflow: hidden;
+	margin: 0px auto;
+	display:inline-block;
+	float: left;
+	//background: #333;
+	
+	.label-group {display: inline-block;}
+}
+
+.form-search-button {
+	//width: 15%;
+	display: inline-block;
+	float: right;
+	//overflow: hidden;
+	margin: 0px;
+	margin-left: 5px;
+}
+
+
+//Campos de la búsqueda
+
+.main-search-place {
+	
+	display: inline-block !important;
+	
+	.populate {width:300px;}
+}
+
+.main-search-date {
+	
+	input {width:150px;}
+}
+
+.main-search-people {
+	
+	.selectpicker {width:150px;}
+}
+
+.main-search-type {
+	
+	display: block;
+	
+	margin: 10px 0 0 10px;
+	font-size: $h6-size;
+	color: $color-2;
+	label {margin-right: 15px; text-transform: none; font-weight: none;}
+}
+
+
+//RESPONSIVE SMALL DESKTOP
+
+@media (min-width:$break-tablet) and (max-width:$break-desktop) {
+	
+	
+	
+	.form-search-fields{max-width: 660px;}
+	
+	.main-search-place {
+	
+		display: inline-block !important;
+	
+		.populate {max-width:250px;}
+	}
+	
+	.main-search-date {
+		
+		input {max-width:130px;}
+	}
+	
+	.main-search-people {
+		
+		.selectpicker {max-width:130px;}
+	}
+}
+
+//RESPONSIVE Tablet To 
+
+@media (min-width:750px) and (max-width:$break-tablet) {
+	
+	.form-search-fields{max-width: 630px;}
+	
+	.main-search-place {
+	
+		display: inline-block !important;
+	
+		.populate {max-width:220px;}
+	}
+	
+	.main-search-date {
+		
+		input {max-width:120px;}
+	}
+	
+	.main-search-people {
+		
+		.selectpicker {max-width:120px;}
+	}
+	//.form-search-button {	width: 120px;}
+}
+
+
+
+// RESPONSIVE TABLET
+
+@media (max-width:750px) {
+	
+	.form-search-fields, 
+	.form-search-button {
+		display:block;
+		width: 100%;
+		float: none;
+		margin-left: 0px;
+	}
+	
+	.main-search-form .label-group {display:block; margin-bottom: 10px;}
+	
+	.main-search-place {width:100% !important;
+			
+		.populate {width:100% !important;}
+	}
+	
+    .main-search-date {
+	
+		input {width:48.55% !important;}
+		input:first-child {margin-right: 1%;}
+	}
+		
+	.main-search-people {
+	
+		.selectpicker {width:100%; }
+	}
+	
+	.main-search-type {
+		
+		label {margin-bottom: 10px;}
+	}
+}
+*/

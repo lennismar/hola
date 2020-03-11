@@ -1,0 +1,58 @@
+/*------------------------------------*\
+   GOOGLE MAPS
+\*------------------------------------*/
+
+.map-canvas {
+	width: 100%;
+	height: 400px;
+	display: block;
+}
+
+.map-search-canvas {
+	width: 100%;
+	height: 550px;
+	//background: #333;
+	//display: block;
+	
+	@media 	(max-width: $break-movil){
+		
+		height: 380px;
+	}
+}
+
+
+// PIN DEL MAPA
+
+/*
+		
+<div id="content-map-pin">'+
+	'<div id="siteNotice">'+
+	'</div>'+
+	'<div class="card-header">'+
+	'<div class="house-class">Casa rural independiente</div>'+
+	'<div class="house-TypeDot"></div>'+
+	'<div class="card-title">Apartamentos rurales con barbacoa en Garrotxa</div>'+
+	'</div>'+
+	'<div class="card-img">'+
+	'<div class="card-price">Desde<span class="card-price-hightlight">40,5€ </span>Persona / Noche</div>'+
+	'<img src="assets/img/foto-casa.jpg" alt="foto-casa" width="739" height="397" />'+
+	'</div>'+
+	'<div class="card-items-core">'+
+	'<span class="card-person">Personas <strong>1 - 8</strong></span>'+
+	'<span class="card-rooms">Habitaciones <strong>4</strong></span>'+
+	'<span class="card-baths">Baños <strong>3</strong></span>'+
+	'</div>'+
+	'<a href="#" class="card-btn">Ver Casa </a>'+
+	'</div>
+*/
+
+
+#content-map-pin {
+	
+	//background: #333;
+	border:0px;
+	padding: 5px 0px;
+	max-width: 300px;
+	
+	
+}

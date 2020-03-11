@@ -1,0 +1,194 @@
+/*------------------------------------*\
+    FICHA DE CASA
+\*------------------------------------*/
+
+/** layout ficha **/
+.house-layout {
+	@include clearfix();
+	position: relative;
+	width: 100%;
+	display: block;		
+}
+
+.house-main {
+	width:100%;
+
+	@media (min-width:$screen-md) {
+		width: calc(100% - 330px);
+		float: left;
+    }
+}
+
+.house-sidebar {
+	width: 100%;
+	
+	@media (min-width:$screen-md) {
+		width: 300px;
+		float: left;
+		margin-left: 30px;
+	}
+}
+
+
+/** formato */
+
+.house-section{
+	
+	background: $color-2;
+	@include border-top-right-radius (25px);
+}
+
+.house-section-header {
+	padding:15px;
+}
+
+.house-title {
+	font-size: $h5-size;
+	margin-bottom: $spacing-unit-xxs;
+	
+	@media (min-width:$screen-md) {
+		font-size: $h3-size;
+	}
+}
+
+.house-nav {
+	display: flex;
+	justify-content: space-around;
+	background-color: #fff;
+	border-top: 1px $color-cream-light solid;
+	
+	a {
+		padding:$spacing-unit-xxs $spacing-unit-xs;
+		color: #9B9B9B;
+		display: block;
+		
+		&:hover {
+			color: $color-orange;
+		}
+	}
+	
+	.active {
+		background: $color-orange;
+		
+		a {
+			color: $color-white;
+		}
+	}
+	
+	&.is_stuck {
+		box-shadow: 0 0 15px 0 rgba(0,0,0,0.25);
+	}
+	
+	@media (max-width:$screen-md) {
+		display: none;
+	}
+}
+
+.content-block {
+	
+	position: relative;
+	display: block;
+	padding:$spacing-unit-md $spacing-unit-sm*2;
+	line-height: 1.5;
+	
+	h2 {
+		font-weight: 300;
+		font-size: $h2-size;
+		color: $color-orange;
+		margin-bottom: $spacing-unit-sm;
+	}
+	
+	h3 {
+		font-size: $h4-size;
+		margin-bottom: $spacing-unit-xs;
+	}
+	
+	p {
+		margin-bottom:$spacing-unit-md;
+		&:last-child {margin-bottom: 0;}
+	}
+	
+	@media (max-width:$break-movil) {
+	
+        padding: $spacing-unit-small !important;
+    }
+	
+}
+
+.content-block--small-pad {
+	border-bottom: 1px $color-5 solid;
+	padding:$spacing-unit-small $spacing-unit-medium;
+}
+
+// BLOQUE STATS
+
+.house-reviews {
+	float:right;
+	
+	line-height: 100%;
+	vertical-align: middle;
+	
+	@media (max-width:$break-movil) {
+		
+		float:none; 
+	}	
+}
+
+.house-stats {
+	
+	display: flex;
+	display: -webkit-flex; /* Safari */
+	display: -ms-flexbox;
+	-webkit-flex-direction: row; /* Safari */
+	flex-direction: row;
+	-webkit-flex-wrap: nowrap; /* Safari */
+	flex-wrap: nowrap;
+
+	
+	.stat {
+		width:25%;
+		padding:10px 0px;
+	}
+	
+	@media (max-width:$break-movil) {
+		
+		-webkit-flex-wrap: wrap; /* Safari */
+		flex-wrap: wrap;
+		.stat {
+			width:50% !important;
+			//border-bottom: 1px $color-5 solid;
+			padding:7px 0px;
+		
+		}
+	}
+
+}
+
+.stat--title {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: $milli-size;
+	
+}
+
+.stat--value {
+	text-align: center;
+	font-weight: bold;
+	font-size: $h5-size;
+}
+
+ul.service-list {
+	
+	display:block;
+	li {
+		float:none !important;
+		margin: 0px 0px 15px 0px;
+	}
+}
+
+.house-conditions {
+	text-align: center;
+	@include clearfix();
+	
+	
+}

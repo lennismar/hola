@@ -1,0 +1,37 @@
+<?php
+
+/*
+* Title                   : Ajax Booking Calendar Pro
+* Version                 : 1.1
+* File                    : load.php
+* File Version            : 1.0
+* Created / Last Modified : 24 May 2011
+* Author                  : Marius-Cristian Donea
+* Copyright               : © 2011 Marius-Cristian Donea
+* Website                 : http://www.mariuscristiandonea.com
+* Description             : Booking Calendar database config script file.
+*/
+
+	
+	require_once('../../../administrador/includes/Logger.php');
+	$log = new aalog('logs/'.date('Ymd').'_logfile.log');
+	$log->setCookie(1);
+	//$log->loginfo('here\'s some info on the DB connection: ');
+
+
+	// ------------------- CONFIGURACIO BBDD ONLINE --------------------------------------
+
+	// Clase de acceso a BD
+	require_once ('../../../administrador/includes/MysqliDb.php');
+    require_once ('../../../../includes/db_config.php');
+    $db = new MysqliDb ($db_config);
+
+	define('URL_BASE','http://localhost/somrurals/');
+
+	define('HOME_DIR','C:\\Apache24\\htdocs\\somrurals/');
+
+
+	define('FILE_DIR','images/uploads/');
+	include '../../../administrador/includes/functions.php';
+
+?>

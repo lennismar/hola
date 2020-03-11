@@ -1,0 +1,69 @@
+/*------------------------------------*\
+    STAR RATINS
+\*------------------------------------*/
+
+.rating-box {
+	border:1px $color-cream-light solid;
+	padding: $spacing-unit-xs; 
+}
+
+.rating-house {
+	padding: $spacing-unit-xs 0;
+}
+
+.rating-punctuation-title {
+	
+	margin-left: $spacing-unit-xs;
+	margin-top: -23px;
+	font-weight: bold;
+	display: inline-block;
+	//transform: translateY(-15px)
+	
+	.punctuation {
+		font-size: $h2-size;
+		display: inline-block
+	}
+}
+
+.rating {
+    float:left;
+    display: inline-block;
+   
+}
+.rating span {
+	float:left;
+	position:relative;
+}
+
+
+.starred-one,
+.starred-half,
+.starred-none {
+	width:20px;
+    height:20px;
+    margin-right:2px;
+    display:inline-block;
+}
+/*
+.starred-one {background:url(../img/sprite.svg) -200px -60px;}
+.starred-half {background:url(../img/sprite.svg) -200px -80px;}
+.starred-none {background:url(../img/sprite.svg) -200px -100px;}
+*/
+.comments-number {
+	display: inline-block;
+	padding: 1px 0 0 10px;
+}
+//// 
+
+.list-punctuation {
+	border-top:1px $color-cream-light solid;
+	padding-top: $spacing-unit-xs;
+	
+	li .rating {
+		float: right;
+	}
+}
+
+.list-punctuation li{
+	margin-bottom: $spacing-unit-small;
+}

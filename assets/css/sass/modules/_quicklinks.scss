@@ -1,0 +1,224 @@
+///////////////////////////////////////////////
+////////
+///////    Quiklinks
+//////
+///////////////////////////////////////////////
+/*
+.quickbg-1 { // Girona
+	
+	background-image: url(../img/bg-quicklink-1.jpg);
+	@include background-size(cover);
+}
+
+.quickbg-2 { // Barcelona
+	background-image: url(../img/bg-quicklink-2.jpg);
+	@include background-size(cover);
+}
+.quickbg-3 { // Tarragona
+	background-image: url(../img/bg-quicklink-3.jpg);
+	@include background-size(cover);
+}
+.quickbg-4 { // Lleida
+	background-image: url(../img/bg-quicklink-4.jpg);
+	@include background-size(cover);
+}
+*/
+.qmap {
+	width:44px; 
+	height:44px;
+	display:inline-block;
+	float:left;
+	margin-right: 10px;
+}
+
+.qgirona {
+	background:url(../img/sprite.svg) 0px -44px;
+}
+
+.qbarcelona {
+	background:url(../img/sprite.svg) -44px -44px;
+}
+
+.qtarragona {
+	background:url(../img/sprite.svg) -44px -88px;
+}
+.qlleida {
+	background:url(../img/sprite.svg) 0px -88px;
+}
+
+////////
+
+.grid-quiklinks {
+	z-index: 100;
+}
+
+/* Common style */
+.grid-quiklinks .quick-content {
+	position: relative;
+	//float: left;
+	overflow: hidden;
+	//margin: 10px 1%;
+	//min-width: 320px;
+	//max-width: 480px;
+	max-height: 360px;
+	//width: 48%;
+	height: 110px;
+	background:$color-1;
+	//text-align: center;
+	cursor: pointer;
+}
+
+.grid-quiklinks .quick-content img {
+	//position: relative;
+	position: absolute;
+	display: block;
+	height: auto;
+	width:100%;
+	@include opacity(0.5);
+}
+
+.grid-quiklinks .quick-content figcaption {
+	padding: 2em;
+	color:$color-2;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	
+	span {
+		display: block;
+		font-size:24px; 
+		font-weight:bold;
+		margin-top:0px;
+	}
+}
+
+.grid-quiklinks figure figcaption::before,
+.grid-quiklinks figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid-quiklinks .quick-content figcaption,
+.grid-quiklinks .quick-content figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid-quiklinks figure figcaption > a {
+	z-index: 100;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+/*
+.grid-quiklinks figure h2 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+
+.grid-quiklinks figure h2 span {
+	font-weight: 800;
+}
+
+.grid-quiklinks figure h2,
+.grid-quiklinks figure p {
+	margin: 0;
+}
+
+.grid figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+*/
+/* Individual effects */
+
+/*---------------*/
+/***** Julia *****/
+/*---------------*/
+
+.effect-julia {
+	background: $color-1;//#2f3238;
+}
+
+.effect-julia img {
+	max-width: none;
+	height: 200px;
+	@include opacity(0.6);
+	-webkit-transition: opacity .5s, -webkit-transform .5s;
+	transition: opacity .5s, transform .5s;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.effect-julia figcaption {
+	text-align: left;
+}
+/*
+figure.effect-julia h2 {
+	position: relative;
+	padding: 0.5em 0;
+}
+
+figure.effect-julia p {
+	display: inline-block;
+	margin: 0 0 0.25em;
+	padding: 0.4em 1em;
+	background: rgba(255,255,255,0.9);
+	color: #2f3238;
+	text-transform: none;
+	font-weight: 500;
+	font-size: 75%;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(-360px,0,0);
+	transform: translate3d(-360px,0,0);
+}
+*/
+.effect-julia p:first-child {
+	-webkit-transition-delay: 0.15s;
+	transition-delay: 0.15s;
+}
+
+.effect-julia p:nth-of-type(2) {
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+}
+
+.effect-julia p:nth-of-type(3) {
+	-webkit-transition-delay: 0.05s;
+	transition-delay: 0.05s;
+}
+
+.effect-julia:hover p:first-child {
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
+
+.effect-julia:hover p:nth-of-type(2) {
+	-webkit-transition-delay: 0.05s;
+	transition-delay: 0.05s;
+}
+
+.effect-julia:hover p:nth-of-type(3) {
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+}
+
+.effect-julia:hover img {
+	@include opacity(0.3);
+	//-webkit-transform: scale3d(1.1,1.1,1);
+	//transform: scale3d(1.1,1.1,1);
+	-webkit-transform: scale3d(1.5,1.5,1);
+	transform: scale3d(1.5,1.5,1);
+}
+/*
+figure.effect-julia:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+*/

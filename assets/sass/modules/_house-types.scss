@@ -1,0 +1,33 @@
+
+////////// CASAS SEGUN TIPO
+
+
+.house-TypeDot {float: right; display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin: -15px 10px 0px 0px;}
+
+.house-type-1 {
+	
+	.house-class {color:$color-6;}
+	
+	.house-TypeDot {background:$color-6;}
+	
+}
+
+
+.house-type-2 {
+	
+	.house-class {color:$color-10;}
+	
+	.house-TypeDot {background:$color-10;}
+	
+}
+
+
+.house-type-3 {
+	
+	.house-class {color:$color-11;}
+	
+	.house-TypeDot {background:$color-11;}
+	
+}
+
+

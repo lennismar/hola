@@ -1,0 +1,147 @@
+/*------------------------------------*\
+	
+    CSS COMPILE STYLES
+    
+\*------------------------------------*/
+
+@import "defaults";
+
+/*------------------------------------*\
+	
+    Generic utility styles etc.
+    
+\*------------------------------------*/
+
+@import "generic/mymixins";
+@import "generic/normalize";
+@import "generic/reset";
+@import "generic/helper";
+
+
+/*------------------------------------*\
+	
+    Base styles; unclassed HTML elements etc.
+    
+\*------------------------------------*/
+
+@import "base/main";
+@import "base/layout";
+@import "base/grid";
+@import "base/headings";
+
+@import "base/lists";  //tipos de listas
+@import "base/tables";
+@import "base/type";
+@import "base/forms";
+@import "base/responsive";
+
+/*------------------------------------*\
+	
+   Objects and abstractions
+    
+\*------------------------------------*/
+
+@import "objects/nav";
+
+@import "objects/pagination";
+
+@import "objects/breadcrumb";
+
+@import "objects/buttons";
+
+@import "objects/icons"; // ICONOS
+
+@import "objects/tags"; // Tags
+
+@import "objects/alerts"; //Cajas de alertas
+
+@import "objects/tabs"; // Responsive TABS to dropdown
+
+@import "objects/dropdown";  // Desplegable dropdown
+
+@import "objects/show-extra-content"; //Esconde el contendio extra cuando el texto es muy largo
+
+@import "objects/rating"; // Star rating system
+
+@import "objects/tooltip"; // Tooltip
+
+@import "objects/reviews"; // Reviews de producto
+
+@import "objects/share-buttons"; // Buttons to share
+
+@import "objects/step-nav"; // Navegacion por pasos (en el check out
+
+@import "objects/split"; // Divide listas (checkout...)
+
+@import "objects/instant-booking"; // Marca de reserva inmediata
+
+@import "objects/hr-lines"; // hr separadores
+
+/*
+@import "objects/media";
+
+*/
+
+/**************************************
+*
+* MODULOS
+*
+***************************************/
+
+@import "modules/header";
+@import "modules/hero";
+@import "modules/footer";
+@import "modules/cards-house";
+@import "modules/cards-others";
+@import "modules/cards-places";
+@import "modules/quicklinks";
+@import "modules/main-search";
+@import "modules/filters";
+
+@import "modules/_house-types";  // Indicadores de TIpos de casa
+
+@import "modules/_book-form";
+
+@import "modules/_checkout-form";
+
+@import "modules/_responsive-bars"; // Barras fijas que aparecen en responsive
+
+/**************************************
+*
+* PAGINAS / TEMPLATES
+*
+***************************************/
+
+@import "pages/home"; //HOME
+
+@import "pages/search-results"; //Resultados de b´suqueda
+
+@import "pages/ficha";  //Ficha de casa
+
+@import "pages/checkout";  // Proceso de checkout
+
+@import "pages/landing";  // Landing
+
+@import "pages/ficha-recurso"; //Ficha recurso
+
+@import "pages/contacto"; // pagina contacto
+
+@import "pages/como-reservar"; // como reservar
+
+@import "pages/custom-template"; // Genérica de contenido
+
+@import "pages/error"; // Genérica de contenido
+
+/**************************************
+*
+* VENDORS
+*
+***************************************/
+
+@import "vendors/select2";
+@import "vendors/owl-carousel";
+@import "vendors/jquery-ui";
+@import "vendors/fotorama";
+@import "vendors/mailchimp";
+@import "vendors/venobox";
+@import "vendors/google-maps";

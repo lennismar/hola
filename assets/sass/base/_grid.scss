@@ -1,0 +1,241 @@
+
+/*------------------------------------*\
+    COLUMNS
+\*------------------------------------*/
+
+.row {
+	@include clearfix();
+	
+	display: flex;
+	display: -webkit-flex; /* Safari */
+	display: -ms-flexbox;
+	-webkit-flex-direction: row; /* Safari */
+	flex-direction: row;
+	-webkit-flex-wrap: nowrap; /* Safari */
+	flex-wrap: nowrap;
+
+	
+	@media (max-width:$break-movil) { 
+		flex-direction: column;
+		-webkit-flex-direction:column;
+	}
+}
+
+// WITHOUT MARGIN
+
+.col {
+	//display: inline-block;
+	//float:left
+}
+
+.col--half {
+	
+	width: 50%;
+	
+	@media (max-width:$break-movil) {
+		 
+		width: 100%;
+		//float:none;
+		 
+	}	
+}
+
+.col--third {
+	
+	width: 33.3333333%;
+	
+	@media (max-width:$break-movil) {
+		 
+		width: 100%;
+		//float:none; 
+	}	
+}
+
+.col--fourth {
+	
+	width: 25%;
+	
+	@media (max-width:$break-movil) {
+		 
+		width: 50%;
+		//float:none; 
+	}	
+	
+	//@media (max-width:$break-movil) {
+		 
+	//	 width: 100%;
+	//	 float:none; 
+	//}	
+}
+
+//WITH MARGIN
+
+
+.col-pad {
+	display: inline-block;
+	float:left;
+	margin-right: 2%;
+	
+	@media (max-width:$break-movil) {
+		margin-bottom: $half-spacing-unit;
+	}
+}
+
+.col-pad:last-child {margin-right:0%}
+
+.col-pad--half {
+	
+	width: 49%;
+	
+	@media (max-width:$break-movil) {
+		 
+		width: 100%;
+		//float:none;
+		 
+	}	
+}
+
+.col-pad--third {
+	
+	width: 32%;
+	
+	@media (max-width:$break-movil) {
+		 
+		width: 100%;
+		//float:none; 
+	}	
+}
+
+.col-pad--two-third {
+	
+	width: 64%;
+	
+	@media (max-width:$break-tablet) {
+		 
+		width: 100%;
+		//float:none; 
+	}	
+}
+
+
+.col-pad--fourth {
+	
+	width: 23.5%;
+	
+	@media (max-width:$break-tablet) {
+		 
+		width: 49%;
+		//float:none; 
+	}	
+	
+	@media (max-width:$break-movil) {
+		 
+		width: 100%;
+		//float:none; 
+	}	
+}
+
+.col-pad--three-fourth {
+	
+	width: 74.5%;
+		
+	@media (max-width:$break-desktop) {
+		 
+		width: 100%;
+		//float:none; 
+	}	
+}
+
+.col-special-one-third {
+	
+	display: inline-block;
+	width: 32%;
+	position:relative;
+	
+	@media (max-width:$break-tablet) {
+		width: 100%;
+		margin-top: $spacing-unit-medium;
+	}	
+}
+
+
+/*-----------------------------------------------------*\
+	
+  LIST OF ELEMENTS IN COLUMNS  files of 3, 4... with gutter
+    
+\*-----------------------------------------------------*/
+
+.list-col-three {
+	display: inline-block;
+	width: 31.5%;
+	margin-right:2%;
+	margin-bottom: $spacing-unit-medium;
+	
+	&:nth-child(3n) {margin-right: 0px;}
+	
+	@media (max-width:$break-movil) {
+		width: 100%;
+		margin-right: 0px;
+	}
+}
+
+.list-col-four {
+	display: inline-block;
+	vertical-align: top;
+	width: 23%;
+	margin-right: 2%;
+	margin-bottom: $spacing-unit-medium;
+		
+	&:nth-child(4n) {margin-right: 0px;}
+	
+	@media (max-width:$break-tablet) {
+		width: 48%;
+		&:nth-child(2n) {margin-right: 0px;}
+	}
+	
+	@media (max-width:$break-movil) {
+		width: 100%;
+		margin-right: 0px;
+	}
+}
+
+/*------------------------------------*\
+    COLUMNS
+\*------------------------------------*/
+
+
+.two-col {
+	column-count: 2;
+	column-gap: 50px;
+	-moz-column-count: 2;
+	-moz-column-gap: 50px;
+	-webkit-column-count: 2;
+	-webkit-column-gap: 50px;
+       
+	@media (max-width:$break-movil) {
+		column-count: 1;
+		column-gap: 0px;
+		-moz-column-count: 1;
+		-moz-column-gap: 0px;
+		-webkit-column-count: 1;
+		-webkit-column-gap: 0px;
+	}
+}
+
+.three-col {
+	column-count: 3;
+	column-gap: 25px;
+	-moz-column-count: 3;
+	-moz-column-gap: 25px;
+	-webkit-column-count: 3;
+	-webkit-column-gap: 25px;
+       
+	@media (max-width:$break-movil) {
+		column-count: 1;
+		column-gap: 0px;
+		-moz-column-count: 1;
+		-moz-column-gap: 0px;
+		-webkit-column-count: 1;
+		-webkit-column-gap: 0px;
+	}
+}

@@ -1,0 +1,48 @@
+
+.share-buttons {
+	display: table;
+	line-height:30px;
+	
+	height: 30px;
+	
+	span {display: inline-block; line-height: 30px;vertical-align: middle;margin-top: -20px;}
+	
+	a {margin-left: 10px; display:inline-block; width: 30px;}
+	
+	a:hover {
+		.btn-share-bg-fill {fill:$color-3 !important;}
+	}
+}
+
+
+/*
+.btn-share--twitter {
+
+		.btn-share-icon-fill {fill:$color-2 !important;}
+		
+		.btn-share-bg-fill {fill:$color-twitter!important;}
+}
+
+
+.btn-share--facebook {
+	
+	.btn-share-icon-fill {fill: $color-2;}
+	
+	.btn-share-bg-fill {fill:$color-facebook;}
+}
+
+
+.btn-share--googleplus {
+	
+	.btn-share-icon-fill {fill: $color-2;}
+	
+	.btn-share-bg-fill {fill:$color-googleplus;}
+}
+
+.btn-share--email {
+	
+	.btn-share-icon-fill {fill:$color-2;}
+	
+	.btn-share-bg-fill {fill:$color-email;}
+}
+*/

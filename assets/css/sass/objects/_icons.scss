@@ -1,0 +1,179 @@
+/*------------------------------------*\
+    ICONS
+\*------------------------------------*/
+
+// aplicar en capa antes del texto: <span class="icon icon--pool">Piscina</span>
+
+.icon {
+    display:inline-block;
+    line-height:1;
+    position:relative;
+    vertical-align:middle;
+    zoom:1;
+	margin-left: 20px;
+	font-style:normal;
+    font-weight:normal;
+    padding-left: 5px;
+}
+
+
+.icon:before {
+	width:20px;
+	height:20px;
+	background-image:url(../img/sprite.svg);
+	display:block;
+	content: " ";
+	position:absolute;
+	margin:-5px 0px 0px -25px;
+}
+
+// ICONOS GENERALES
+
+.icon--place:before {background-position: -80px 0px; } //Puntero
+
+.icon--map:before {background-position: -180px -80px; } // MAPA
+
+.icon--list:before {background-position: -180px -100px; } // MAPA
+
+
+.icon--love-white:before {background-position: -220px 0px; } // Corazoon blanco
+
+.icon--find-white:before {background-position: -220px -20px; } // Lupa blanco
+
+.icon--quever-white:before {background-position: -220px -40px; } // Pointer que ver
+
+.icon--email-orange:before {background-position: -220px -60px; margin:0px 0px 0px -25px;} // Icp email naranja
+
+// ICONOS SERVICIOS
+
+
+.icon--fireplace:before {background-position: -100px 0px; } // Chimenea
+
+.icon--barbacue:before {background-position: -120px 0px; } // Barbacoa
+
+.icon--pool:before {background-position: -140px 0px; }  // Piscina
+
+.icon--wifi:before {background-position: -160px 0px; } // WIFI
+
+.icon--pets:before {background-position: -100px -20px;} // Mascotas
+
+.icon--air:before {background-position: -120px -20px;} // Aire acondicionado
+
+.icon--garden:before {background-position: -140px -20px;} // Jardin
+
+.icon--terrace:before {background-position: -160px -20px;} // Terraza
+
+.icon--bath:before {background-position: -100px -40px;} // Baño en la habitación
+
+.icon--kitchen:before {background-position: -120px -40px;} // Cocina
+
+.icon--washmachine:before {background-position: -140px -40px;} // Lavadora
+
+.icon--dishmachine:before {background-position: -160px -40px;} // Lavavajillas
+
+// BANDERAS MENU
+
+.icon--flag-es:before {background-position: -100px -100px;} // Flag ES
+
+.icon--flag-cat:before {background-position: -120px -100px;} // Flag CAT
+
+.icon--flag-en:before {background-position: -140px -100px;} // Flag EN
+
+.icon--flag-fr:before {background-position: -160px -100px;} // Flag FR
+
+// ficha verde
+
+.icon--place-green:before {background-position: -180px -0px;} // Pinter verde
+
+.icon--date-green:before {background-position: -180px -20px;} // calendario verde
+
+//.icon--ficha-casa:before {background-position: -80px -60px;} // calendario verde
+
+// YES / NO SERVICES
+
+.icon--yes:before {background-position: -200px -20px;} // Check OK
+
+.icon--no:before {background-position: -200px 0px;} // Check NO X
+
+//INFO
+
+.icon--tooltip:before {background-position: -200px -40px;} // INFO TOOLTIP
+
+
+// ICONS HOUSE CONDITIONS
+
+.icon-conditios--towels,
+.icon-conditios--kitchen,
+.icon-conditios--firewood {
+	
+	width: 60px;
+	height: 60px;
+	display: block;
+	margin: 0 auto;
+	background-image:url(../img/sprite.svg);
+}
+
+.icon-conditios--towels {background-position: -80px -120px;}
+
+.icon-conditios--kitchen {background-position: -140px -120px;}
+
+.icon-conditios--firewood {background-position: -200px -120px;}
+
+// ICons FORMS
+
+.icon-input-search{
+	background-image: url(../img/icon-search.svg);
+	background-repeat: no-repeat;
+	background-position:center left;
+}
+.icon-input-search--right{
+	background-image: url(../img/icon-search.svg);
+	background-repeat: no-repeat;
+	background-position:center right;
+}
+.icon-input-calendar{
+	background-image:url(../img/icon-calendar.svg);
+	background-position:center right;
+	background-repeat: no-repeat;
+}
+
+.icon-input-email {
+	background-image:url(../img/icon-mail.svg);
+	background-position:center right;
+	background-repeat: no-repeat;
+}
+
+// ICons BIG FOR STATS
+
+.icon-big {
+	display:block;
+	width:36px;
+	height:36px;
+	margin: 0 auto;
+	background-image:url(../img/sprite.svg); 
+	background-size: 643px 463px;	
+}
+
+.icon-big--fireplace {background-position: -179px 0px; } // Chimenea
+
+.icon-big--barbacue {background-position: -215px 0px; } // Barbacoa
+
+.icon-big--pool {background-position: -250px 0px; }  // Piscina
+
+.icon-big--wifi {background-position: -286px 0px; } // WIFI
+
+.icon-big--pets {background-position: -178px -36px;} // Mascotas
+	
+.icon-big--air {background-position: -214px -36px;} // Aire acondicionado
+	
+.icon-big--garden {background-position: -250px -36px;} // Jardin
+	
+.icon-big--terrace {background-position: -286px -36px;} // Terraza
+	
+.icon-big--bath {background-position: -178px -72px;} // Baño en la habitación
+
+.icon-big--kitchen {background-position: -214px -72px;} // Cocina
+	
+.icon-big--washmachine {background-position: -250px -72px;} // Lavadora
+	
+.icon-big--dishmachine {background-position: -286px -72px;} // Lavavajillas

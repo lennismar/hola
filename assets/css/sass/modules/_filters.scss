@@ -1,0 +1,77 @@
+/*------------------------------------*\
+    FILTROS
+\*------------------------------------*/
+
+.search-filters {
+	
+	font-size: $milli-size;
+	background: $color-8;
+	@include border-top-right-radius (25px);
+	padding: 10px;
+}
+
+.filter-header-block {
+	font-weight: bold;
+	border-top:1px $color-2 solid;
+	display: block;
+	margin-top: $spacing-unit-medium;
+	padding: 7px 0px;
+	cursor:pointer;
+	background: url(../img/icon-arrow-down.svg) no-repeat right center;
+ 
+}
+
+.search-filters li {
+	margin-bottom:$spacing-unit-small;
+	
+	&:last-child {
+		margin-bottom: 0;
+	}
+	
+}
+
+.btn-filter-plus {
+	display: block;
+	
+	@media (max-width:$break-desktop) {
+		display: none !important;
+	}
+}
+
+.filters-extra-content {
+	display: none;
+	margin-bottom: $spacing-unit-small;
+	
+	@media (max-width:$break-desktop) {
+		display: block !important;
+	}
+}
+
+.filter-mobile-button {
+	
+	@media (max-width:$break-desktop) {
+	
+		position:fixed;
+		bottom:0px;
+		left: 0px;
+		//background: $color-2;
+		width:100%;
+		padding: 5px;
+		font-size:16px;
+		//height:60px;
+	}
+}
+
+.filters-instant-booking {
+	
+	margin-top: $spacing-unit-small;
+	
+	.highlited{
+		color: $color-reserva;
+	}
+	.small {
+		margin-left: 20px;
+		font-size: $micro-size;
+		display: inline-block;
+	}
+}

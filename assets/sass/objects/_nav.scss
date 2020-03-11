@@ -1,0 +1,137 @@
+/*------------------------------------*\
+    $NAV
+\*------------------------------------*/
+.nav {
+    list-style:none;
+    margin-left:0;
+    position: relative;
+    //@extend .cf;
+    
+    //display:table;
+    margin-top: 13px;
+    float:right;
+    
+    //a {color: $color-4;}
+
+    >li{
+	    
+	    margin-left: 15px;
+
+        &,
+        > a{
+            display:inline-block;
+           *display:inline;
+            zoom:1;
+            color: $color-3;
+            border-bottom: 3px transparent solid;
+        }
+        
+        @media (min-width:$break-desktop) {
+        
+	        > a:hover{
+	            color: $color-6;
+	            border-bottom: 3px $color-6 solid;
+	            padding-bottom: 7px;
+	        }
+        }
+    }
+    
+    li:first-child {margin-left: 0;}
+    
+    
+    @media (max-width:$break-tablet) {
+	
+		position:absolute;
+		background:#252525;// $color-8;
+		z-index: 9999;
+		margin: 45px 0px 0px -50px;
+		//padding: 0px !important;
+		//padding-left: -50px;
+		width: 100% !important;
+		@include box-shadow (0px 2px 2px 0px rgba(0, 0, 0, 0.3));
+		> li {
+			text-align: center;
+			float:none;
+			display: block;
+			margin: 0px;
+			border-top:1px #333 solid;
+			font-size: $h6-size;
+			padding:5px; 			
+			&,
+			> a {
+				width: 100%;
+				padding:5px 0px 5px 0px !important;
+				//padding-bottom: 0px;
+				border-bottom: 0;
+				color: $color-2;
+				//background: #fff;
+				
+			}
+		}
+		
+		.search_header input[type="text"]{
+			width:80%;
+			background-color:#555;// $color-2;
+			padding-left:40px;
+			color: #ccc;
+			
+		}
+		
+		.wrapper-dropdown-3 {width: 80%;
+			
+			background-color:#555;// $color-2;
+			color: #ccc;
+		}
+    }
+    
+	@media (max-width:$break-movil) {
+		
+		margin: 45px 0px 0px -10px;
+	     
+	}
+}
+
+// Search HEADER
+// -------------------------
+
+.search_header input[type="text"]{
+	//text-indent:1px;
+	margin-top:-1px;
+    width:22px;
+    height:35px;
+    line-height:100%;
+    font-size: $base-font-size;
+    background-color: transparent;
+    @include transition (all 0.3s ease-in-out);
+    cursor:pointer;
+    background:url(../img/icon-search.svg) no-repeat center left;
+    
+    @media (min-width:$break-desktop) {
+	    
+	    &:focus{
+		    width:250px;
+		    background:$color-5 url(../img/icon-search.svg) no-repeat center left;
+		    outline:none;
+		    cursor:text;
+		    padding-left:35px;
+		}
+	}
+}
+//.search_header input[type="text"]
+
+
+
+/**
+ * Menú listado vertica con anchor en la página *
+ */
+ 
+.sub-menu-listed {
+	
+	li {
+		margin-bottom: $spacing-unit-small;
+		
+		a {color:$color-3}
+		.active,
+		a:hover {color:$color-1}
+	}
+}

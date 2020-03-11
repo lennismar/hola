@@ -1,0 +1,59 @@
+///////////////////////////////////////////////
+////////
+///////    RESULTADOS DE BÚSQUEDA
+//////
+///////////////////////////////////////////////
+
+.result-search-bar {
+	//border-bottom: 1px #333 solid;
+	@include box-shadow  (0px 2px 2px 0px rgba(0, 0, 0, 0.2));
+	
+}
+	
+.search-results .card-link {
+	
+	display: block;
+	
+	margin-bottom: $spacing-unit-medium;
+	
+	&:last-child {margin-bottom: 0;}
+	
+	@media (max-width:$break-movil) {
+		
+		margin-bottom: $spacing-unit-small;
+	}
+}
+
+.search-info {
+	position:relative;
+	margin-bottom:  $spacing-unit-medium;
+}
+
+.search-results-number{
+	font-size: $h4-size;
+	margin-right: 80px;
+	
+	h1 {
+		display: inline;
+		font-weight: normal;
+		color: inherit;
+	}
+	
+	@media (max-width:$break-movil) {
+		
+		font-size: $h6-size;
+		
+	}
+	
+}
+
+.search-results-map {
+	width: 80px;
+	height: 25px;
+	top:5px;
+	right:0;
+	//background: $color-4;
+	//float: right;
+	display: inline-block;
+	position: absolute;
+}
