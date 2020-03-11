@@ -1,8 +1,0 @@
-{
-  "require": {
-    "mailin-api/mailin-api-php": "^1.0",
-    "eluceo/ical": "^0.11.6",
-    "aws/aws-sdk-php": "^3.69",
-    "maximebf/debugbar": "1.*"
-  }
-}
